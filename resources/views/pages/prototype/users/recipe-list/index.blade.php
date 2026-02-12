@@ -1,243 +1,304 @@
 <x-mylayouts.layout-prototype>
 
-    {{-- Source: https://bootstrapbrain.com/component/bootstrap-cards-example-for-blog-posts/ --}}
+    <!-- Feature Start -->
+    <div class="container-fluid feature position-relative p-5 pb-0 mt-5">
+        <div class="row g-5 gb-5">
+            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="feature-item rounded text-center p-5">
+                    <img class="img-fluid bg-white rounded-circle" src="{{ asset('template_custom/img/feature-1.png') }}" style="width: 150px; height: 150px;">
+                    <h3 class="my-4">Best Chef</h3>
+                    <p class="text-light">Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd
+                        elitr duo vero amet amet stet</p>
+                    <a class="font-body" style="letter-spacing: 1px;" href="">Read More <i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                <div class="feature-item rounded text-center p-5">
+                    <img class="img-fluid bg-white rounded-circle" src="{{ asset('template_custom/img/feature-2.png') }}" style="width: 150px; height: 150px;">
+                    <h3 class="my-4">Menu Variations</h3>
+                    <p class="text-light">Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd
+                        elitr duo vero amet amet stet</p>
+                    <a class="font-body" style="letter-spacing: 1px;" href="">Read More <i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="feature-item rounded text-center p-5">
+                    <img class="img-fluid bg-white rounded-circle" src="{{ asset('template_custom/img/feature-3.png') }}" style="width: 150px; height: 150px;">
+                    <h3 class="my-4">Healthy Food</h3>
+                    <p class="text-light">Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd
+                        elitr duo vero amet amet stet</p>
+                    <a class="font-body" style="letter-spacing: 1px;" href="">Read More <i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-6 text-center wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="display-4 text-secondary mb-4"><span class="text-primary">30% Discount</span><br> For This Summer</h1>
+                <a href="" class="btn btn-primary py-3 px-5">Order Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
 
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/blogs/blog-3/assets/css/blog-3.css">
 
-    <!-- Blog 3 - Bootstrap Brain Component -->
-    <section class="py-3 py-md-5">
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-                    <h3 class="fs-6 text-secondary mb-2 text-uppercase text-center">Our News</h3>
-                    <h2 class="display-5 mb-4 mb-md-5 text-center">Here is our blog's latest company news about
-                        regularly publishing fresh content.</h2>
-                    <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+    <!-- Menu Start -->
+    <div class="container-fluid menu py-5 px-0">
+        <div class="mb-5 text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px; margin: auto;">
+            <h5 class="section-title">Our Menu</h5>
+            <h1 class="display-3 mb-0">Hands Craft More Than Meals</h1>
+        </div>
+        <div class="tab-class text-center">
+            <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase rounded-pill mb-5 wow fadeIn" data-wow-delay="0.2s">
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill text-white active" data-bs-toggle="pill" href="#tab-1">Breakfast</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-2">Launch</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-3">Dinner</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-0">
+                        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-1.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-2.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-3.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-4.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-5.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.6s">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-6.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-7.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.8s">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-8.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-pane fade p-0">
+                    <div class="row g-0">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-2.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-3.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-4.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-5.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-6.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-7.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-8.jpg') }}" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/menu-1.jpg" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-3" class="tab-pane fade p-0">
+                    <div class="row g-0">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/menu-3.jpg" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/menu-4.jpg" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/menu-5.jpg" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/menu-6.jpg" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/menu-7.jpg" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/menu-8.jpg" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/menu-1.jpg" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/menu-2.jpg" alt="">
+                                <div
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                    BBQ Chicken</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Menu End -->
 
-        <div class="container overflow-hidden">
-            <div class="row gy-4 gy-lg-0">
-                <div class="col-12 col-lg-4">
-                    <article>
-                        <div class="card border-0">
-                            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                                <a href="#!">
-                                    <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
-                                        src="{{ asset('template_default/images/image_10.jpg') }}" alt="Business">
-                                </a>
-                                <figcaption>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                                        <path
-                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-                                        <path
-                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
-                                    </svg>
-                                    <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
-                                </figcaption>
-                            </figure>
-                            <div class="card-body border bg-white p-4">
-                                <div class="entry-header mb-3">
-                                    <ul class="entry-meta list-unstyled d-flex mb-2">
-                                        <li>
-                                            <a class="link-primary text-decoration-none" href="#!">Business</a>
-                                        </li>
-                                    </ul>
-                                    <h2 class="card-title entry-title h4 mb-0">
-                                        <a class="link-dark text-decoration-none" href="#!">Overcoming Challenges to
-                                            Make a Living Online</a>
-                                    </h2>
-                                </div>
-                                <p class="card-text entry-summary text-secondary">
-                                    Making money online is attainable. However, even if the processes are simple, you
-                                    may still need help with issues.
-                                </p>
-                            </div>
-                            <div class="card-footer border border-top-0 bg-white p-4">
-                                <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
-                                    <li>
-                                        <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center"
-                                            href="#!">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
-                                                <path
-                                                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                            </svg>
-                                            <span class="ms-2 fs-7">7 Feb 2023</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="px-3">&bull;</span>
-                                    </li>
-                                    <li>
-                                        <a class="link-secondary text-decoration-none d-flex align-items-center"
-                                            href="#!">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                                <path
-                                                    d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
-                                            </svg>
-                                            <span class="ms-2 fs-7">55</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <article>
-                        <div class="card border-0">
-                            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                                <a href="#!">
-                                    <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
-                                        src="{{ asset('template_default/images/image_9.jpg') }}" alt="Nutrition">
-                                </a>
-                                <figcaption>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-eye text-white bsb-hover-fadeInDown" viewBox="0 0 16 16">
-                                        <path
-                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-                                        <path
-                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
-                                    </svg>
-                                    <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Read More</h4>
-                                </figcaption>
-                            </figure>
-                            <div class="card-body border bg-white p-4">
-                                <div class="entry-header mb-3">
-                                    <ul class="entry-meta list-unstyled d-flex mb-2">
-                                        <li>
-                                            <a class="link-primary text-decoration-none" href="#!">Nutrition</a>
-                                        </li>
-                                    </ul>
-                                    <h2 class="card-title entry-title h4 mb-0">
-                                        <a class="link-dark text-decoration-none" href="#!">How to Exercise to Achieve
-                                            Your Nutrition Goals</a>
-                                    </h2>
-                                </div>
-                                <p class="card-text entry-summary text-secondary">
-                                    Fitness trainer explains how nutrition is as important as workouts when it comes to
-                                    losing fat or building muscle.
-                                </p>
-                            </div>
-                            <div class="card-footer border border-top-0 bg-white p-4">
-                                <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
-                                    <li>
-                                        <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center"
-                                            href="#!">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
-                                                <path
-                                                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                            </svg>
-                                            <span class="ms-2 fs-7">12 Aug 2023</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="px-3">&bull;</span>
-                                    </li>
-                                    <li>
-                                        <a class="link-secondary text-decoration-none d-flex align-items-center"
-                                            href="#!">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                                <path
-                                                    d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
-                                            </svg>
-                                            <span class="ms-2 fs-7">39</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <article>
-                        <div class="card border-0">
-                            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                                <a href="#!">
-                                    <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
-                                        src="{{ asset('template_default/images/image_8.jpg') }}" alt="Health">
-                                </a>
-                                <figcaption>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-eye text-white bsb-hover-fadeInRight" viewBox="0 0 16 16">
-                                        <path
-                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-                                        <path
-                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
-                                    </svg>
-                                    <h4 class="h6 text-white bsb-hover-fadeInLeft mt-2">Read More</h4>
-                                </figcaption>
-                            </figure>
-                            <div class="card-body border bg-white p-4">
-                                <div class="entry-header mb-3">
-                                    <ul class="entry-meta list-unstyled d-flex mb-2">
-                                        <li>
-                                            <a class="link-primary text-decoration-none" href="#!">Health</a>
-                                        </li>
-                                    </ul>
-                                    <h2 class="card-title entry-title h4 mb-0">
-                                        <a class="link-dark text-decoration-none" href="#!">10 Tips To Lose Weight
-                                            Quickly Without Dieting</a>
-                                    </h2>
-                                </div>
-                                <p class="card-text entry-summary text-secondary">
-                                    Chewing slowly and eating more fiber may help you lose weight quickly without
-                                    exercise or a specific diet plan.
-                                </p>
-                            </div>
-                            <div class="card-footer border border-top-0 bg-white p-4">
-                                <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
-                                    <li>
-                                        <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center"
-                                            href="#!">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
-                                                <path
-                                                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                            </svg>
-                                            <span class="ms-2 fs-7">21 Dec 2023</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="px-3">&bull;</span>
-                                    </li>
-                                    <li>
-                                        <a class="link-secondary text-decoration-none d-flex align-items-center"
-                                            href="#!">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                                <path
-                                                    d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
-                                            </svg>
-                                            <span class="ms-2 fs-7">61</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+
+    <!-- Instagram Start -->
+    <div class="container-fluid position-relative instagram p-0 mt-5">
+        <a href="" class="d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle bg-white rounded-circle" style="width: 100px; height: 100px; z-index: 1;">
+            <i class="fab fa-instagram fa-2x text-secondary"></i>
+        </a>
+        <div class="row g-0">
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                <img class="img-fluid" src="img/menu-2.jpg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.2s">
+                <img class="img-fluid" src="img/menu-3.jpg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                <img class="img-fluid" src="img/menu-4.jpg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.4s">
+                <img class="img-fluid" src="img/menu-5.jpg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                <img class="img-fluid" src="img/menu-6.jpg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.6s">
+                <img class="img-fluid" src="img/menu-7.jpg" alt="">
             </div>
         </div>
-    </section>
+    </div>
+    <!-- Instagram End -->
+
+
 
 </x-mylayouts.layout-prototype>
