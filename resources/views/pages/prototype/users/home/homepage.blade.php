@@ -1,37 +1,32 @@
 <x-mylayouts.layout-prototype>
-
+<!--Chef HOME PAGE prptotype/-->
 <!-- Hero Start -->
     <div class="container-fluid p-5 mb-5 bg-dark text-secondary">
         <div class="row g-5 py-5">
             <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
-                <h1 class="display-1 text-secondary text-center mb-0">John Doe</h1>
+                <h1 class="display-1 text-secondary text-center mb-0">Home</h1>
             </div>
             <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                <img class="img-fluid rounded mb-3" src="{{ asset('template_custom/(img/hero-2.jpg') }}">
+                <img class="img-fluid rounded mb-3" src="{{ asset('template_custom/img/about.jpg') }}">
                 <p>
                     <i class="bi bi-arrow-down animate-up-down" style="font-size: 3rem;"></i>
                 </p>
                 <p class="mb-0">
-                    Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos
-                    sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                    justo et tempor consetetur takimata eirmod.
+                    Top recipies, best chefs, and more. <br>
                 </p>
             </div>
             <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100 rounded" src="{{ asset('template_custom/(img/hero-1.jpg') }}" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100 rounded" src="{{ asset('template_custom/img/hero-1.jpg') }}" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
                 <p>
-                    Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos
-                    sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                    justo et tempor consetetur takimata eirmod.
-                </p>
+
                 <p>
                     <i class="bi bi-arrow-up animate-up-down" style="font-size: 3rem;"></i>
                 </p>
-                <img class="img-fluid rounded" src="{{ asset('template_custom/(img/hero-3.jpg') }}">
+                <img class="img-fluid rounded" src="{{ asset('template_custom/img/hero-3.jpg') }}">
             </div>
         </div>
     </div>
@@ -45,10 +40,10 @@
                 <div class="position-relative h-100">
                     <div class="position-absolute top-0 start-0 animate-rotate"
                         style="width: 160px; height: 160px;">
-                        <img class="img-fluid" src="{{ asset('template_custom/(img/about-round.jpg') }}" alt="">
+                        <img class="img-fluid" src="{{ asset('template_custom/img/about-round.jpg') }}" alt="">
                     </div>
                     <img class="position-absolute w-100 h-100 rounded-circle rounded-bottom rounded-end"
-                        src="{{ asset('template_custom/(img/about.jpg') }}" style="object-fit: cover;">
+                        src="{{ asset('template_custom/img/about.jpg') }}" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-7">
@@ -56,26 +51,20 @@
                     <h5 class="section-title">About Us</h5>
                     <h1 class="display-3 mb-0">Cooking Together With The Expert</h1>
                 </div>
-                <p class="mb-4 wow fadeIn" data-wow-delay="0.3s">Nonumy erat diam duo labore clita. Sit magna ipsum dolor sed ea duo at ut. Tempor sit
-                    lorem sit magna ipsum duo. Sit eos dolor ut sea rebum, diam sea rebum lorem kasd ut ipsum dolor est
-                    ipsum. Et stet amet justo amet clita erat, ipsum sed at ipsum eirmod labore lorem.</p>
+                <p class="mb-4 wow fadeIn" data-wow-delay="0.3s"></p>
                 <div class="row">
                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                         <div class="bg-light rounded p-4">
                             <img class="img-fluid bg-primary rounded-circle mb-3" src="{{ asset('template_custom/img/feature-1.png') }}" style="width: 80px; height: 80px;">
                             <h4>Master Chefs</h4>
-                            <p class="mb-0">Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam
-                                ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing
-                                labore.</p>
+                            <p class="mb-0">.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                         <div class="bg-light rounded p-4">
-                            <img class="img-fluid bg-primary rounded-circle mb-3" src="{{ asset('template_custom/img/feature-3.png') }}" style="width: 80px; height: 80px;">
+                            <img class="img-fluid bg-primary rounded-circle mb-3" src="{{ asset('template_custom/img/feature-2.png') }}" style="width: 80px; height: 80px;">
                             <h4>Quality Food</h4>
-                            <p class="mb-0">Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam
-                                ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing
-                                labore.</p>
+                            <p class="mb-0">.</p>
                         </div>
                     </div>
                 </div>
@@ -489,54 +478,6 @@
     </div>
     <!-- Team End -->
 
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid p-0 my-5">
-        <div class="row g-0">
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 500px;">
-                <div class="h-100 position-relative overflow-hidden" style="border-top-left-radius: 50%;">
-                    <img class="position-absolute w-100 h-100" src="{{ asset('template_custom/img/testimonial.jpg') }}" style="object-fit: cover;">
-                </div>
-            </div>
-            <div class="col-lg-6 bg-dark p-5 overflow-hidden wow fadeIn" data-wow-delay="0.3s" style="border-bottom-right-radius: 50%;">
-                <div class="mb-5">
-                    <h5 class="section-title">Testimonial</h5>
-                    <h1 class="display-3 text-secondary mb-0">Our Client Say</h1>
-                </div>
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item">
-                        <p class="fs-4 fw-normal text-light mb-4"><i
-                                class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo clita tempor justo dolor
-                            et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore
-                            et tempor diam tempor erat dolor rebum sit ipsum.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="{{ asset('template_custom/img/testimonial-1.jpg') }}" alt="">
-                            <div class="ps-4">
-                                <h5 class="text-secondary">Client Name</h5>
-                                <span class="small text-uppercase text-secondary"
-                                    style="letter-spacing: 3px;">Profession</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <p class="fs-4 fw-normal text-light mb-4"><i
-                                class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo clita tempor justo dolor
-                            et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore
-                            et tempor diam tempor erat dolor rebum sit ipsum.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="{{ asset('template_custom/img/testimonial-2.jpg') }}" alt="">
-                            <div class="ps-4">
-                                <h5 class="text-secondary">Client Name</h5>
-                                <span class="small text-uppercase text-secondary"
-                                    style="letter-spacing: 3px;">Profession</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
 
 
     <!-- Blog Start -->
