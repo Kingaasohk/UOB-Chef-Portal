@@ -21,7 +21,7 @@
 
                 <div class="profile-div text-center">
                     <img id="imgPreview" style="width: 300px; height: 300px"
-                        src="{{ asset('storage/images/profiles/default.jpg'); }}" alt=""
+                        src="{{ asset (path: 'public\storage\images\profiles\etty-fidele-UBJsHb3HLv8-unsplash.jpg') }}" alt=""
                         class="img-fluid rounded-circle">
                 </div>
 
