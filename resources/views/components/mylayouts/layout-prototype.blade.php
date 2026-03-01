@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CHEFER - Chef Website Template</title>
+    <title>Recipienest - Recipie & chef blog</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -33,14 +33,14 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
+    <!-- Spinner Start -->       <!-- what the hell is a spinner??-->
     <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
 
 
-    <!-- Header Start -->
+    <!--HEADER BEGIN -->
     <div class="container-fluid bg-dark px-0">
         <div class="row gx-0 wow fadeIn" data-wow-delay="0.1s">
             <div class="col-lg-3 bg-primary d-none d-lg-block">
@@ -83,8 +83,6 @@
                                 <div class="dropdown-menu rounded-0 m-0">
                                     <a href="feature.html" class="dropdown-item">Features</a>
                                     <a href="blog.html" class="dropdown-item">Blog Post</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="404.html" class="dropdown-item">404 Error</a>
                                 </div>
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -105,7 +103,7 @@
             </div>
         </div>
     </div>
-    <!-- Header End -->
+    <!--HEADER END -->
 
 
     {{ $slot }}
@@ -114,7 +112,7 @@
 
 
 
-    <!-- Footer Start -->
+    <!--FOOTER BEGIN -->
     <div class="container-fluid bg-dark text-secondary px-5">
         <div class="row gx-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="col-lg-8 col-md-6">
@@ -152,7 +150,7 @@
                             <a class="text-secondary mb-2" href="#"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
                             <a class="text-secondary mb-2" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>Food Menu</a>
+                                    class="bi bi-arrow-right text-primary me-2"></i>Recipies</a>
                             <a class="text-secondary mb-2" href="#"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Our Chefs</a>
                             <a class="text-secondary mb-2" href="#"><i
@@ -169,7 +167,7 @@
                             <a class="text-secondary mb-2" href="#"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
                             <a class="text-secondary mb-2" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>Food Menu</a>
+                                    class="bi bi-arrow-right text-primary me-2"></i>Recipies</a>
                             <a class="text-secondary mb-2" href="#"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Our Chefs</a>
                             <a class="text-secondary mb-2" href="#"><i
@@ -183,13 +181,13 @@
             <div class="col-lg-4 col-md-6">
                 <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 p-5"
                     style="background: #111111;">
-                    <h3 class="text-white mb-4">Newsletter</h3>
-                    <h6 class="text-uppercase text-light mb-2">Subscribe Our Newsletter</h6>
-                    <p class="small text-secondary">Amet justo diam dolor rebum lorem sit stet sea justo kasd</p>
+                    <h3 class="text-white mb-4"></h3>                              <!-- news letter start ig/ can edit -->
+                    <h6 class="text-uppercase text-light mb-2"></h6>
+                    <p class="small text-secondary"></p>
                     <form action="">
                         <div class="input-group">
                             <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                            <button class="btn btn-primary">Sign Up</button>
+                            <button class="btn btn-primary">Sign Up</button>  <!-- Sign up button it does what u think it does also takes you to the register/login -->
                         </div>
                     </form>
                 </div>
@@ -200,7 +198,7 @@
         <div class="row gx-5">
             <div class="col-lg-8">
                 <div class="py-lg-4 text-center">
-                    <p class="text-secondary mb-0">&copy; <a class="text-light fw-bold" href="#">Your Site Name</a>. All
+                    <p class="text-secondary mb-0">&copy; <a class="text-light fw-bold" href="#">Your Site Name</a>. All  <!-- website name can edit -->
                         Rights Reserved. Distributed by <a class="text-light fw-bold"
                         href="https://themewagon.com">ThemeWagon</a></p>
                 </div>
@@ -216,7 +214,7 @@
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+    <!-- FOOTER END -->
 
 
     <!-- Back to Top -->

@@ -1,116 +1,454 @@
-<x-mylayouts.layout-author-dashboard>
+<x-mylayouts.layout-prototype>
+
+<style>
+
+/* Main Container */
+
+.create-recipe-container {
+
+max-width:700px;
+margin:50px auto;
+padding:30px;
+
+border:2px solid #ccc;
+background:#ffffff;
+
+}
 
 
-    <!-- Source: https://laravel.com/docs/11.x/validation#quick-displaying-the-validation-errors -->
+/* Title */
+
+.create-recipe-title {
+
+text-align:center;
+font-size:28px;
+font-weight:bold;
+
+margin-bottom:30px;
+
+}
 
 
-    <style>
-        .profile-edit-image {
-            width: 200px;
-            height: 200px;
-        }
-    </style>
+/* Form Layout */
+
+.recipe-form-group {
+
+margin-bottom:20px;
+
+}
 
 
-    <div class="card1">
-        <div class="card-body1">
+.recipe-label {
 
-            <h1>TITLE GOES HERE</h1>
+font-weight:bold;
 
-            <form action="{{ route('authors.recipes.store') }}" method="POST" enctype="multipart/form-data">
-                @csrf
-                @method('POST')
+display:block;
 
-                <div class="form-group">
-                    <label for="category">Category:</label>
-                    <input type="text" class="form-control" id="category" name="category" value="">
-                </div>
+margin-bottom:5px;
 
-                <div class="form-group">
-                    <label for="title">Title:
-                    </label>
-                    <input type="text" class="form-control" id="title" name="title" value="{{ old('title') }}">
-                </div>
+}
 
 
-                <div class="form-group">
-                    <label for="short_description">Short Description:</label>
-                    <textarea class="form-control" rows="5" name="short_description"
-                        id="short_description">{{ old('short_description') }}</textarea>
-                </div>
+.recipe-input {
 
-                <x-additional.tinymce.editor id="ingredients" name="ingredients" title="Ingredients"
-                    :value="htmlspecialchars_decode(old('ingredients', ''))" />
+width:100%;
+padding:10px;
 
+border:1px solid #ccc;
 
-                {{-- Full Description --}}
-                <x-additional.tinymce.editor id="full_description" name="full_description" title="Full Description"
-                    :value="old('full_description', '')" />
+border-radius:4px;
+
+}
 
 
+.recipe-textarea {
+
+width:100%;
+
+padding:10px;
+
+border:1px solid #ccc;
+
+border-radius:4px;
+
+}
 
 
-                <div class="form-group">
-                    <label for="image">Image:</label>
-                    <input type="file" class="form-control" name="image" id="image">
-                </div>
+.recipe-select {
 
+width:100%;
 
-                <div class="form-group">
-                    <label for="total_time">Total Time:</label>
-                    <input type="text" class="form-control" name="total_time" id="total_time"
-                        value="{{ old('total_time') ?? 1 }}">
-                </div>
+padding:10px;
 
+border:1px solid #ccc;
 
-                <div class="form-group">
-                    <label for="total_time_unit">Read Unit</label>
-                    <select name="total_time_unit" id="total_time_unit" class="form-control">
-                        <option value="minutes">Minute(s)</option>
-                        <option value="hours">Hour(s)</option>
-                    </select>
-                </div>
+border-radius:4px;
 
-
-                <div class="form-group">
-                    <label for="featured">Is Featured:</label>
-                    <select class="form-control" id="featured" name="featured">
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="public">Public:</label>
-                    <select class="form-control" id="public" name="public">
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
-                </div>
-
-
-
-                <div class="form-group">
-                    <button type="submit" class="btn btn-success">Create</button>
-                    <a class="btn btn-danger" href="{{ route('authors.recipes.index') }}">Cancel</a>
-                </div>
+}
 
 
 
-            </form>
-        </div>
-    </div>
+/* Toggle Boxes */
+
+.recipe-toggle {
+
+background:#f3f3f3;
+
+padding:15px;
+
+border-radius:5px;
+
+margin-bottom:15px;
+
+}
 
 
 
-    {{-- TinyMCE Config --}}
-    @pushOnce('scripts')
-    <x-additional.tinymce.key />
-    @endPushOnce
+/* Buttons */
 
-    @push('scripts')
-    <x-additional.tinymce.config id="full_description" editor="full" />
-    <x-additional.tinymce.config id="ingredients" editor="full" />
-    @endpush
+.recipe-buttons {
 
-</x-mylayouts.layout-author-dashboard>
+margin-top:20px;
+
+}
+
+
+.btn-create {
+
+background:green;
+color:white;
+
+padding:10px 20px;
+
+border:none;
+
+border-radius:5px;
+
+}
+
+
+.btn-cancel {
+
+background:red;
+color:white;
+
+padding:10px 20px;
+
+border:none;
+
+border-radius:5px;
+
+margin-left:10px;
+
+}
+
+</style>
+
+
+
+<div class="create-recipe-container">
+
+
+
+<div class="create-recipe-title">
+
+Create Recipe
+
+</div>
+
+
+
+<form>
+
+
+
+<!-- Category -->
+
+<div class="recipe-form-group">
+
+<label class="recipe-label">
+
+Category
+
+</label>
+
+
+<input
+
+class="recipe-input"
+
+type="text"
+
+value="Food">
+
+</div>
+
+
+
+<!-- Title -->
+
+<div class="recipe-form-group">
+
+<label class="recipe-label">
+
+Title
+
+</label>
+
+
+<input
+
+class="recipe-input"
+
+type="text">
+
+</div>
+
+
+
+<!-- Short Description -->
+
+<div class="recipe-form-group">
+
+<label class="recipe-label">
+
+Short Description
+
+</label>
+
+
+<textarea
+
+class="recipe-textarea"
+
+rows="3">
+
+</textarea>
+
+</div>
+
+
+
+<!-- Full Description -->
+
+<div class="recipe-form-group">
+
+<label class="recipe-label">
+
+Full Description
+
+</label>
+
+
+<textarea
+
+class="recipe-textarea"
+
+rows="4">
+
+</textarea>
+
+</div>
+
+
+
+<!-- Ingredients -->
+
+<div class="recipe-form-group">
+
+<label class="recipe-label">
+
+Ingredients
+
+</label>
+
+
+<textarea
+
+class="recipe-textarea"
+
+rows="4">
+
+</textarea>
+
+</div>
+
+
+
+<!-- Instructions -->
+
+<div class="recipe-form-group">
+
+<label class="recipe-label">
+
+Instructions
+
+</label>
+
+
+<textarea
+
+class="recipe-textarea"
+
+rows="4">
+
+</textarea>
+
+</div>
+
+
+
+<!-- Image -->
+
+<div class="recipe-form-group">
+
+<label class="recipe-label">
+
+Image
+
+</label>
+
+
+<input
+
+class="recipe-input"
+
+type="file">
+
+</div>
+
+
+
+<!-- Total Time -->
+
+<div class="recipe-form-group">
+
+<label class="recipe-label">
+
+Total Time
+
+</label>
+
+
+<input
+
+class="recipe-input"
+
+type="text"
+
+value="1">
+
+</div>
+
+
+
+<!-- Time Unit -->
+
+<div class="recipe-form-group">
+
+<label class="recipe-label">
+
+Time Unit
+
+</label>
+
+
+<select class="recipe-select">
+
+<option>
+
+Minute(s)
+
+</option>
+
+
+<option>
+
+Hour(s)
+
+</option>
+
+
+</select>
+
+</div>
+
+
+
+<!-- Featured -->
+
+<div class="recipe-toggle">
+
+<label>
+
+Set as Featured
+
+</label>
+
+<br>
+
+<input type="checkbox">
+
+</div>
+
+
+
+<!-- Public -->
+
+<div class="recipe-toggle">
+
+<label>
+
+Public
+
+</label>
+
+<br>
+
+<input type="checkbox">
+
+</div>
+
+
+
+<!-- Buttons -->
+
+<div class="recipe-buttons">
+
+
+<button
+
+type="button"
+
+class="btn-create">
+
+Create
+
+</button>
+
+
+
+<button
+
+type="button"
+
+class="btn-cancel">
+
+Cancel
+
+</button>
+
+
+</div>
+
+
+
+</form>
+
+
+
+</div>
+
+
+
+</x-mylayouts.layout-prototype>
