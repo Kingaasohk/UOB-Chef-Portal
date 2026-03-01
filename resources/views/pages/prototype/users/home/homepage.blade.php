@@ -7,7 +7,7 @@
                 <h1 class="display-1 text-secondary text-center mb-0">Home</h1>
             </div>
             <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                <img class="img-fluid rounded mb-3" src="{{ asset('template_custom/img/about.jpg') }}">
+                <img class="img-fluid rounded mb-3" src="{{ asset('template_custom/img/download (1).jpg') }}">
                 <p>
                     <i class="bi bi-arrow-down animate-up-down" style="font-size: 3rem;"></i>
                 </p>
@@ -17,7 +17,7 @@
             </div>
             <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100 rounded" src="{{ asset('template_custom/img/hero-1.jpg') }}" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100 rounded" src="{{ asset('template_custom/img/Pan Power.jpg') }}" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
@@ -26,7 +26,7 @@
                 <p>
                     <i class="bi bi-arrow-up animate-up-down" style="font-size: 3rem;"></i>
                 </p>
-                <img class="img-fluid rounded" src="{{ asset('template_custom/img/hero-3.jpg') }}">
+                <img class="img-fluid rounded" src="{{ asset('template_custom/img/FL_ Keller_.jpg') }}">
             </div>
         </div>
     </div>
@@ -129,7 +129,7 @@
     </div>
     <!-- Facts End -->
 
-
+A
     <!-- Feature Start -->
     <div class="container-fluid feature position-relative p-5 pb-0 mt-5">
         <div class="row g-5 gb-5">
@@ -544,13 +544,13 @@
         </a>
         <div class="row g-0">
             <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.1s">
-                <img class="img-fluid" src="{{ asset('template_custom/img/menu-2.jpg') }}" alt="">
+                <img class="img-fluid" src="{{ asset('template_custom/img/FL_ Keller_.jpg') }}" alt="">
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.2s">
-                <img class="img-fluid" src="{{ asset('template_custom/img/menu-3.jpg') }}" alt="">
+                <img class="img-fluid" src="{{ asset('template_custom/img/download (1).jpg') }}" alt="">
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
-                <img class="img-fluid" src="{{ asset('template_custom/img/menu-4.jpg') }}" alt="">
+                <img class="img-fluid" src="{{ asset('template_custom/img/Pan Power.jpg') }}" alt="">
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.4s">
                 <img class="img-fluid" src="{{ asset('template_custom/img/menu-5.jpg') }}" alt="">

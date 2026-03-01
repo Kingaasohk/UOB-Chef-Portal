@@ -7,8 +7,7 @@
                 <div class="feature-item rounded text-center p-5">
                     <img class="img-fluid bg-white rounded-circle" src="{{ asset('template_custom/img/feature-1.png') }}" style="width: 150px; height: 150px;">
                     <h3 class="my-4">Best Chef</h3>
-                    <p class="text-light">Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd
-                        elitr duo vero amet amet stet</p>
+                    <p class="text-light">Certifed chef with 10+ years of experience</p>
                     <a class="font-body" style="letter-spacing: 1px;" href="">Read More <i
                             class="bi bi-arrow-right"></i></a>
                 </div>
@@ -17,8 +16,7 @@
                 <div class="feature-item rounded text-center p-5">
                     <img class="img-fluid bg-white rounded-circle" src="{{ asset('template_custom/img/feature-2.png') }}" style="width: 150px; height: 150px;">
                     <h3 class="my-4">Menu Variations</h3>
-                    <p class="text-light">Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd
-                        elitr duo vero amet amet stet</p>
+                    <p class="text-light">various menu options to suit all tastes</p>
                     <a class="font-body" style="letter-spacing: 1px;" href="">Read More <i
                             class="bi bi-arrow-right"></i></a>
                 </div>
@@ -27,15 +25,14 @@
                 <div class="feature-item rounded text-center p-5">
                     <img class="img-fluid bg-white rounded-circle" src="{{ asset('template_custom/img/feature-3.png') }}" style="width: 150px; height: 150px;">
                     <h3 class="my-4">Healthy Food</h3>
-                    <p class="text-light">Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd
-                        elitr duo vero amet amet stet</p>
+                    <p class="text-light">some of thebest foods are the most simple </p>
                     <a class="font-body" style="letter-spacing: 1px;" href="">Read More <i
                             class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
             <div class="col-lg-12 col-md-6 text-center wow fadeIn" data-wow-delay="0.1s">
-                <h1 class="display-4 text-secondary mb-4"><span class="text-primary">30% Discount</span><br> For This Summer</h1>
-                <a href="" class="btn btn-primary py-3 px-5">Order Now</a>
+                <h1 class="display-4 text-secondary mb-4"><span class="text-primary">New recipes</span><br> Try them Now</h1>
+                <a href="" class="btn btn-primary py-3 px-5">Leave a review</a>
             </div>
         </div>
     </div>

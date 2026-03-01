@@ -1,86 +1,392 @@
-<x-mylayouts.layout-author-dashboard>
+<x-mylayouts.layout-prototype>
+
+<style>
+
+/* Container */
+
+.profile-container {
+
+max-width:700px;
+margin:50px auto;
+padding:30px;
+
+border:2px solid #ccc;
+background:white;
+
+}
+
+
+/* Title */
+
+.profile-title {
+
+text-align:center;
+
+font-size:28px;
+
+font-weight:bold;
+
+margin-bottom:25px;
+
+}
+
+
+/* Image Section */
+
+.profile-image-section {
+
+text-align:center;
+
+margin-bottom:20px;
+
+}
+
+
+.profile-image {
+
+width:250px;
+
+height:250px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:2px solid #ddd;
+
+}
+
+
+/* Form Groups */
+
+.profile-form-group {
+
+margin-bottom:20px;
+
+}
+
+
+/* Labels */
+
+.profile-label {
+
+font-weight:bold;
+
+display:block;
+
+margin-bottom:5px;
+
+}
+
+
+/* Inputs */
+
+.profile-input {
+
+width:100%;
+
+padding:10px;
+
+border:1px solid #ccc;
+
+border-radius:4px;
+
+}
+
+
+/* Textarea */
+
+.profile-textarea {
+
+width:100%;
+
+padding:10px;
+
+border:1px solid #ccc;
+
+border-radius:4px;
+
+}
+
+
+/* Buttons */
+
+.profile-buttons {
+
+margin-top:20px;
+
+}
+
+
+.btn-update {
+
+background:green;
+
+color:white;
+
+padding:10px 20px;
+
+border:none;
+
+border-radius:5px;
+
+}
+
+
+.btn-cancel {
+
+background:red;
+
+color:white;
+
+padding:10px 20px;
+
+border:none;
+
+border-radius:5px;
+
+margin-left:10px;
+
+}
+
+</style>
 
 
 
-
-    <style>
-        .profile-edit-image {
-            width: 200px;
-            height: 200px;
-        }
-    </style>
-
-
-    <div class="card1">
-        <div class="card-body1">
-
-            <h1>TITLE GOES HERE</h1>
-
-            <form action="#" method="POST" enctype="multipart/form-data">
-
-
-                <div class="profile-div text-center">
-                    <img id="imgPreview" style="width: 300px; height: 300px"
-                        src="{{ asset (path: 'public\storage\images\profiles\etty-fidele-UBJsHb3HLv8-unsplash.jpg') }}" alt=""
-                        class="img-fluid rounded-circle">
-                </div>
-
-                <div class="form-group">
-                    <label for="profile">Profile Image:</label>
-                    <input type="file" class="form-control" name="profile" id="image-input">
-                </div>
-
-
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" value="">
-                </div>
-
-
-                <div class="form-group">
-                    <label for="short_description">Bio:</label>
-                    <textarea class="form-control" rows="5" name="short_description" id="short_description"
-                        minlength="1" maxlength="300"></textarea>
-                </div>
-
-
-                <div class="form-group">
-                    <label for="address">Address:</label>
-                    <input type="text" class="form-control" id="address" name="address" value="">
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone:</label>
-                    <input type="text" class="form-control" id="phone" name="phone" value="">
-                </div>
+<div class="profile-container">
 
 
 
-                <div class="form-group">
-                    <label for="social_facebook">Facebook:</label>
-                    <input type="text" class="form-control" id="social_facebook" name="social_facebook" value="">
-                </div>
+<div class="profile-title">
+
+Edit Chef Profile
+
+</div>
 
 
-                <div class="form-group">
-                    <label for="social_x">X (Twitter):</label>
-                    <input type="text" class="form-control" id="social_x" name="social_x" value="">
-                </div>
 
-                <div class="form-group">
-                    <label for="social_instagram">Instagram:</label>
-                    <input type="text" class="form-control" id="social_instagram" name="social_instagram" value="">
-                </div>
+<form>
 
 
-                <div class="form-group">
-                    <button type="submit" class="btn btn-success">Update</button>
-                    <a class="btn btn-danger" href="{{ route('authors.recipes.index') }}">Cancel</a>
-                </div>
 
-            </form>
-        </div>
-    </div>
+<!-- Profile Image -->
+
+<div class="profile-image-section">
+
+<img
+
+class="profile-image"
+
+src="assets{{ 'template_custom/img/team-3.jpg'}}"
+
+alt="Profile Image">
+
+</div>
 
 
-</x-mylayouts.layout-author-dashboard>
+
+<!-- Upload -->
+
+<div class="profile-form-group">
+
+<label class="profile-label">
+
+Profile Image
+
+</label>
+
+
+<input
+
+type="file"
+
+class="profile-input">
+
+</div>
+
+
+
+<!-- Name -->
+
+<div class="profile-form-group">
+
+<label class="profile-label">
+
+Name
+
+</label>
+
+
+<input
+
+type="text"
+
+class="profile-input">
+
+</div>
+
+
+
+<!-- Bio -->
+
+<div class="profile-form-group">
+
+<label class="profile-label">
+
+Bio
+
+</label>
+
+
+<textarea
+
+rows="4"
+
+class="profile-textarea">
+
+</textarea>
+
+</div>
+
+
+
+<!-- Address -->
+
+<div class="profile-form-group">
+
+<label class="profile-label">
+
+Address
+
+</label>
+
+
+<input
+
+type="text"
+
+class="profile-input">
+
+</div>
+
+
+
+<!-- Phone -->
+
+<div class="profile-form-group">
+
+<label class="profile-label">
+
+Phone
+
+</label>
+
+
+<input
+
+type="text"
+
+class="profile-input">
+
+</div>
+
+
+
+<!-- Facebook -->
+
+<div class="profile-form-group">
+
+<label class="profile-label">
+
+Facebook
+
+</label>
+
+
+<input
+
+type="text"
+
+class="profile-input">
+
+</div>
+
+
+
+<!-- Twitter -->
+
+<div class="profile-form-group">
+
+<label class="profile-label">
+
+X (Twitter)
+
+</label>
+
+
+<input
+
+type="text"
+
+class="profile-input">
+
+</div>
+
+
+
+<!-- Instagram -->
+
+<div class="profile-form-group">
+
+<label class="profile-label">
+
+Instagram
+
+</label>
+
+
+<input
+
+type="text"
+
+class="profile-input">
+
+</div>
+
+
+
+<!-- Buttons -->
+
+<div class="profile-buttons">
+
+
+<button
+type="button"
+class="btn-update">
+
+Update
+
+</button>
+
+
+<button
+type="button"
+class="btn-cancel">
+
+Cancel
+
+</button>
+
+
+</div>
+
+
+
+</form>
+
+
+</div>
+
+
+
+</x-mylayouts.layout-prototype>
