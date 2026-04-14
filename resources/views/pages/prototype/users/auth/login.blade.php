@@ -1,13 +1,26 @@
-<x-mylayouts.layout-auth>
+<x-mylayouts.layout-prototype>
 
     <style>
-
+/* HTML: <div class="loader"></div> */
+.loader {
+    text-align: center;
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  color: #0000;
+  background: linear-gradient(90deg,#C02942 calc(50% + 0.5ch),#000 0) right/calc(200% + 1ch) 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: l7 2s infinite steps(11);
+}
+.loader:before {
+  content:"Please Sign In "
+}
+@keyframes l7 {to{background-position: left}}
     </style>
 
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-
-    {{-- Source: https://bootstrapbrain.com/component/bootstrap-free-login-form-template-with-floating-labels/ --}}
-
+    <link rel="stylesheet" href="{{ asset('template_custom/img/Vanilla@.gif') }}">
     <!-- Login 13 - Bootstrap Brain Component -->
     <section class="bg-light py-3 py-md-5">
         <div class="container">
@@ -16,12 +29,13 @@
                     <div class="card border border-light-subtle rounded-3 shadow-sm">
                         <div class="card-body p-3 p-md-4 p-xl-5">
                             <div class="text-center mb-3">
-                                <a href="#!">
-                                    <img src="./assets/img/bsb-logo.svg" alt="BootstrapBrain Logo" width="175"
-                                        height="57">
-                                </a>
+                               <div class="loader">
+
+
+                               </div>
+
                             </div>
-                            <h2 class="fs-6 fw-normal text-center text-secondary mb-4">Sign in to your account</h2>
+                            <h2 class="fs-6 fw-normal text-center text-secondary mb-4"></h2>
                             <form action="#!">
                                 <div class="row gy-2 overflow-hidden">
                                     <div class="col-12">
@@ -68,4 +82,4 @@
         </div>
     </section>
 
-</x-mylayouts.layout-auth>
+</x-mylayouts.layout-prototype>
