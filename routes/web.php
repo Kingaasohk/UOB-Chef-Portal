@@ -6,7 +6,7 @@ use App\Http\Controllers\ChefController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RecipeController;
 
-Route::get('/', [ChefController::class, 'index'])->name('chefs.index');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 

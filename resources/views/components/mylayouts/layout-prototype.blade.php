@@ -74,10 +74,10 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="menu.html" class="nav-item nav-link">Menu</a>
-                            <a href="team.html" class="nav-item nav-link active">Chefs</a>
+                            <a href="/" class="nav-item nav-link">Home</a>
+                            <a href="portfolio" class="nav-item nav-link">About</a>
+                            <a href="recipes" class="nav-item nav-link">Menu</a>
+                            <a href="chefs" class="nav-item nav-link active">Chefs</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu rounded-0 m-0">
