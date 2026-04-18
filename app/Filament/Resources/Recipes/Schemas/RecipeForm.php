@@ -65,7 +65,7 @@ class RecipeForm
                 Toggle::make('featured')
                     ->default(0)
                     ->label('Featured Recipe'),
-                Toggle::make('public')
+                Toggle::make('published')
                     ->default(1)
                     ->label('Published'),
             ])
