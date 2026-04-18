@@ -28,17 +28,17 @@
 
     <section class="social-icons text-center my-5">
         <h4>Follow on Social Media</h4>
-        <a class="btn btn-light" target="__blank" href="https://www.facebook.com/"><i
+        <a class="btn btn-light" target="__blank" href="{{ $chef->social_media_1 }}"><i
                 class="fa-brands icon-blue fa-facebook-f"></i></a>
 
-        <a class="btn btn-light" target="__blank" href="https://x.com/?lang=en"><i
+        <a class="btn btn-light" target="__blank" href="{{ $chef->social_media_2 }}"><i
                 class="fa-brands fa-x-twitter"></i></a>
 
-        <a class="btn btn-light" target="__blank" href="https://www.youtube.com/"><i
+        <a class="btn btn-light" target="__blank" href="{{ $chef->social_media_1 }}"><i
                 class="fa-brands icon-red fa-youtube"></i></a>
 
 
-        <a class="btn btn-light" target="__blank" href="https://www.instagram.com/"><i
+        <a class="btn btn-light" target="__blank" href="/{{ $chef->social_media_1 }}"
                 class="fa-brands icon-purple fa-instagram"></i></a>
 
 
