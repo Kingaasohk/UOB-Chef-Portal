@@ -28,3 +28,4 @@ class ChefController extends Controller
         return view('pages.prototype.users.portfolio.main', compact('chefs', 'featured_data'));
     }
 }
+

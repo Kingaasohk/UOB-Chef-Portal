@@ -7,23 +7,25 @@
                 <div class="row justify-content-md-center">
                     <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
                         <h3 class="fs-6 text-secondary mb-2 text-uppercase text-center">Latest Recipes</h3>
-                        <
+
                         <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
                     </div>
                 </div>
             </div>
-
+@foreach ($recipe_data as $recipe)
             <div class="container overflow-hidden">
                 <div class="row gy-4 gy-lg-0">
+
+
                     <!-- Recipe 1 -->
                     <div class="col-12 col-lg-4">
                         <article>
                             <div class="card border-0">
                                 <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
                                     <a href="#!">
-                                        <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
-                                            src="{{ asset('template_custom/img/menu-3.jpg') }}"
-                                            alt="Artisan Bread">
+                                        <img class="{img-fluid bsb-scale bsb-hover-scale-up}" loading="lazy"
+                                            src="{{$recipe->getImage() }}"
+                                            alt="">
                                     </a>
                                     <figcaption>
                                         <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read Recipe</h4>
@@ -58,7 +60,7 @@
                                 <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
                                     <a href="#!">
                                         <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
-                                            src="{{ asset('template_custom/img/menu-2.jpg') }}"
+                                            src="{{ $recipe->getImage() }}"
                                             alt="Pastry">
                                     </a>
                                     <figcaption>
@@ -94,7 +96,7 @@
                                 <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
                                     <a href="#!">
                                         <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
-                                            src="{{ asset('template_custom/img/menu-1.jpg') }}"
+                                            src="{{ $recipe->getImage() }}"
                                             alt="Gourmet Dish">
                                     </a>
                                     <figcaption>
@@ -125,5 +127,6 @@
 
                 </div>
             </div>
+             @endforeach
         </section>
     </div>
