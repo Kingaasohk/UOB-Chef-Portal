@@ -1,50 +1,16 @@
 <x-mylayouts.layout-prototype>
-
     <!-- Feature Start -->
-    <div class="container-fluid feature position-relative p-5 pb-0 mt-5">
-        <div class="row g-5 gb-5">
-            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="feature-item rounded text-center p-5">
-                    <img class="img-fluid bg-white rounded-circle" src="{{ asset('template_custom/img/feature-1.png') }}" style="width: 150px; height: 150px;">
-                    <h3 class="my-4">Best Chef</h3>
-                    <p class="text-light">Certifed chef with 10+ years of experience</p>
-                    <a class="font-body" style="letter-spacing: 1px;" href="">Read More <i
-                            class="bi bi-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.3s">
-                <div class="feature-item rounded text-center p-5">
-                    <img class="img-fluid bg-white rounded-circle" src="{{ asset('template_custom/img/feature-2.png') }}" style="width: 150px; height: 150px;">
-                    <h3 class="my-4">Menu Variations</h3>
-                    <p class="text-light">various menu options to suit all tastes</p>
-                    <a class="font-body" style="letter-spacing: 1px;" href="">Read More <i
-                            class="bi bi-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="feature-item rounded text-center p-5">
-                    <img class="img-fluid bg-white rounded-circle" src="{{ asset('template_custom/img/feature-3.png') }}" style="width: 150px; height: 150px;">
-                    <h3 class="my-4">Healthy Food</h3>
-                    <p class="text-light">some of thebest foods are the most simple </p>
-                    <a class="font-body" style="letter-spacing: 1px;" href="">Read More <i
-                            class="bi bi-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-6 text-center wow fadeIn" data-wow-delay="0.1s">
-                <h1 class="display-4 text-secondary mb-4"><span class="text-primary">New recipes</span><br> Try them Now</h1>
-                <a href="" class="btn btn-primary py-3 px-5">Leave a review</a>
-            </div>
-        </div>
-    </div>
-    <!-- Feature End -->
 
 
-    <!-- Menu Start -->
+
+    {{-- our hands crafy more // section below the features  --}}
     <div class="container-fluid menu py-5 px-0">
         <div class="mb-5 text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px; margin: auto;">
             <h5 class="section-title">Our Menu</h5>
             <h1 class="display-3 mb-0">Hands Craft More Than Meals</h1>
         </div>
+{{-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --}}
+
         <div class="tab-class text-center">
             <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase rounded-pill mb-5 wow fadeIn" data-wow-delay="0.2s">
                 <li class="nav-item">
@@ -57,216 +23,87 @@
                     <a class="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-3">Dinner</a>
                 </li>
             </ul>
+{{-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --}}
+    <!-- Feature End -->
+
+@foreach ($recipes as $recipe)
+    <!-- Recipes Start -->
+
             <div class="tab-content">
                 <div id="tab-1" class="tab-pane fade show p-0 active">
-                    <div class="row g-0">
+
+                    <div class="row g-10">
                         <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-1.jpg') }}" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
+                                <img class="img-fluid" src="{{$recipe->getImage() }}" alt="">
+                                <div class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary" href ={{ $recipe->getlink()}} >
+                                    {{ $recipe-> title }}</div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
                             <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-2.jpg') }}" alt="">
+                                <img class="img-fluid" src="{{ $recipe->getImage() }}" alt="">
                                 <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary" href ={{ $recipe->getlink()}}    >
+                                    {{ $recipe-> title }}</div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                             <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-3.jpg') }}" alt="">
+                                <img class="img-fluid" src="{{ $recipe->getImage() }}" alt="">
                                 <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary" href ={{ $recipe->getlink()}}    >
+                                    {{ $recipe-> title }}</div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                             <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-4.jpg') }}" alt="">
+                                <img class="img-fluid" src="{{ $recipe->getImage() }}" alt="">
                                 <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary" href ={{ $recipe->getlink()}}    >
+                                    {{ $recipe-> title }}</div>
                             </div>
+                            <hr>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-5.jpg') }}" alt="">
+                                <img class="img-fluid" src="{{ $recipe->getImage() }}" alt="">
                                 <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary" href ={{ $recipe->getlink()}}    >
+                                    {{ $recipe-> title }}</div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.6s">
                             <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-6.jpg') }}" alt="">
+                                <img class="img-fluid" src="{{ $recipe->getImage() }}" alt="">
                                 <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary" href ={{ $recipe->getlink()}}    >
+                                    {{ $recipe-> title }}</div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-7.jpg') }}" alt="">
+                                <img class="img-fluid" src="{{ $recipe->getImage() }}" alt="">
                                 <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary" href ={{ $recipe->getlink()}}    >
+                                    {{ $recipe-> title }}</div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.8s">
                             <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-8.jpg') }}" alt="">
+                                <img class="img-fluid" src="{{ $recipe->getImage() }}" alt="">
                                 <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="tab-2" class="tab-pane fade p-0">
-                    <div class="row g-0">
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-2.jpg') }}" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-3.jpg') }}" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-4.jpg') }}" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-5.jpg') }}" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-6.jpg') }}" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-7.jpg') }}" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('template_custom/img/menu-8.jpg') }}" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/menu-1.jpg" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="tab-3" class="tab-pane fade p-0">
-                    <div class="row g-0">
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/menu-3.jpg" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/menu-4.jpg" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/menu-5.jpg" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/menu-6.jpg" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/menu-7.jpg" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/menu-8.jpg" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/menu-1.jpg" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/menu-2.jpg" alt="">
-                                <div
-                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                    BBQ Chicken</div>
+                                    class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary" href ={{ $recipe->getlink()}}    >
+                                    {{ $recipe-> title }}</div>
+                                    <hr>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Menu End -->
 
+    <!-- Recipes End -->
+@endforeach
 
     <!-- Instagram Start -->
     <div class="container-fluid position-relative instagram p-0 mt-5">
