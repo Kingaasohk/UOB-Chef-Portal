@@ -1,5 +1,13 @@
 <x-mylayouts.layout-prototype :showSidebar="false" :col="12">
 
+@include('pages.additional.social-media-follow')
+
+
+
+
+
+
+
 
     <section class="profile">
         {{-- Source: https://bootstrapbrain.com/component/bootstrap-about-us-section-snippet-example/ --}}
