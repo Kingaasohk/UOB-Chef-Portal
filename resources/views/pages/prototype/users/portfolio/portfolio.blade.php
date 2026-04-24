@@ -1,132 +1,47 @@
-<div>
-        <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/blogs/blog-3/assets/css/blog-3.css">
 
-        <section class="py-3 py-md-5">
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-                        <h3 class="fs-6 text-secondary mb-2 text-uppercase text-center">Latest Recipes</h3>
 
-                        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
-                    </div>
-                </div>
+
+<section class="py-3 py-md-5">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 text-center">
+                <h3 class="fs-6 text-secondary mb-2 text-uppercase">{{ $chef->name  }} Recipes</h3>
+                <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
             </div>
-@foreach ($recipe_data as $recipe)
-            <div class="container overflow-hidden">
-                <div class="row gy-4 gy-lg-0">
+        </div>
 
-
-                    <!-- Recipe 1 -->
-                    <div class="col-12 col-lg-4">
-                        <article>
-                            <div class="card border-0">
-                                <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                                    <a href="#!">
-                                        <img class="{img-fluid bsb-scale bsb-hover-scale-up}" loading="lazy"
-                                            src="{{$recipe->getImage() }}"
-                                            alt="">
-                                    </a>
-                                    <figcaption>
-                                        <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read Recipe</h4>
-                                    </figcaption>
-                                </figure>
-                                <div class="card-body border bg-white p-4">
-                                    <div class="entry-header mb-3">
-                                        <ul class="entry-meta list-unstyled d-flex mb-2">
-                                            <li>
-                                                <a class="link-primary text-decoration-none" href="#!">Bread</a>
-                                            </li>
-                                        </ul>
-                                        <h2 class="card-title entry-title h4 mb-0">
-                                            <a class="link-dark text-decoration-none" href="#!">Rustic Artisan Sourdough</a>
-                                        </h2>
-                                    </div>
-                                    <p class="card-text entry-summary text-secondary">
-                                        Learn how to bake a perfect crusty sourdough bread from scratch, using traditional techniques and natural fermentation.
-                                    </p>
-                                </div>
-                                <div class="card-footer border border-top-0 bg-white p-4">
-                                    <span class="fs-7 text-secondary">Published: 15 Feb 2026</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Recipe 2 -->
-                    <div class="col-12 col-lg-4">
-                        <article>
-                            <div class="card border-0">
-                                <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                                    <a href="#!">
-                                        <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
-                                            src="{{ $recipe->getImage() }}"
-                                            alt="Pastry">
-                                    </a>
-                                    <figcaption>
-                                        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Read Recipe</h4>
-                                    </figcaption>
-                                </figure>
-                                <div class="card-body border bg-white p-4">
-                                    <div class="entry-header mb-3">
-                                        <ul class="entry-meta list-unstyled d-flex mb-2">
-                                            <li>
-                                                <a class="link-primary text-decoration-none" href="#!">Pastry</a>
-                                            </li>
-                                        </ul>
-                                        <h2 class="card-title entry-title h4 mb-0">
-                                            <a class="link-dark text-decoration-none" href="#!">Chocolate Croissant Delight</a>
-                                        </h2>
-                                    </div>
-                                    <p class="card-text entry-summary text-secondary">
-                                        Master the art of flaky, buttery croissants filled with rich chocolate, perfect for breakfast or dessert.
-                                    </p>
-                                </div>
-                                <div class="card-footer border border-top-0 bg-white p-4">
-                                    <span class="fs-7 text-secondary">Published: 10 Feb 2026</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Recipe 3 -->
-                    <div class="col-12 col-lg-4">
-                        <article>
-                            <div class="card border-0">
-                                <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                                    <a href="#!">
-                                        <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
-                                            src="{{ $recipe->getImage() }}"
-                                            alt="Gourmet Dish">
-                                    </a>
-                                    <figcaption>
-                                        <h4 class="h6 text-white bsb-hover-fadeInLeft mt-2">Read Recipe</h4>
-                                    </figcaption>
-                                </figure>
-                                <div class="card-body border bg-white p-4">
-                                    <div class="entry-header mb-3">
-                                        <ul class="entry-meta list-unstyled d-flex mb-2">
-                                            <li>
-                                                <a class="link-primary text-decoration-none" href="#!">Gourmet</a>
-                                            </li>
-                                        </ul>
-                                        <h2 class="card-title entry-title h4 mb-0">
-                                            <a class="link-dark text-decoration-none" href="#!">Seared Salmon with Herb Butter</a>
-                                        </h2>
-                                    </div>
-                                    <p class="card-text entry-summary text-secondary">
-                                        Impress your guests with this elegant seared salmon recipe served with a fragrant herb butter sauce.
-                                    </p>
-                                </div>
-                                <div class="card-footer border border-top-0 bg-white p-4">
-                                    <span class="fs-7 text-secondary">Published: 5 Feb 2026</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
+    @include('pages.custom.users.portfolio.filters')
+{{-- Page content  --}}
+        <div class="row gy-3">
+            {{-- repeats each recipie card  --}}
+            @foreach ($recipe_data as $recipe)
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card border-0 h-100">
+                        <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+                            <a href="{{ $recipe->getLink() }}" class="bsb-hover-image d-block">
+                                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
+                                     src="{{ $recipe->getImage() }}"
+                                     alt="{{ $recipe->title }}">
+                            </a>
+                            <figcaption>
+                                <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read Recipe</h4>
+                            </figcaption>
+                        </figure>
+                        <div class="card-body border bg-white p-4">
+                            <h2 class="card-title h4 mb-2">
+                                <a class="link-dark text-decoration-none" href="{{ $recipe->getLink() }}">{{ $recipe->title }}</a>
+                            </h2>
+                            <p class="card-text text-secondary">{{ $recipe->short_description }}</p>
+                        </div>
+                        <div class="card-footer border border-top-0 bg-white p-4">
+                            <span class="fs-7 text-secondary">Published: {{ $recipe->created_at->format('d M Y') }}</span>
+                        </div>
+                    </article>
                 </div>
-            </div>
-             @endforeach
-        </section>
+            @endforeach
+
+{{-- recipe pagination  --}}
+           {{ $recipe_data->links() }}
+        </div>
     </div>
+</section>

@@ -1,59 +1,45 @@
 <x-mylayouts.layout-prototype >
-
+ <!-- Recipe Title and Image -->
     <div class="container mt-5">
-        <!-- Recipe Title and Image -->
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1>
-                    Chocolate Cake</h1>
+                    {{ $recipe_data->title }}
+                </h1>
+                <h4>{{ $recipe_data->category }}</h4>
                 <div class="text-center">
-                    <img class="recipe-image" style="width: 30%"
-                        src="{{ asset('template_custom/img/choco.jpg') }}"
-                                        alt="Chocolate Cake">
+                    <img class="recipe-image" style="width: 50%; height: auto;"
+                        src="{{ $recipe_data->getImage() }}"
+                            alt="{{ $recipe_data->title }}">
+                            <p>{!! $recipe_data->full_description !!}</p>
                 </div>
             </div>
         </div>
 
-        <!-- Recipe Info -->
-        <div class="row mt-4">
-            <div class="col-md-12">
-                <h2>Ingredients</h2>
-                <ul class="ingredients-list">
-                    <li>Flour</li>
-                    <li>Sugar</li>
-                    <li>Baking powder</li>
-                    <li>Milk</li>
-                    <li>chocolate</li>
-                    <li>eggs</li>
-                </ul>
-            </div>
-        </div>
+
+
 
         <!-- Recipe Instructions -->
         <div class="row mt-4">
             <div class="col-md-12">
                 <h2>Instructions</h2>
-                <p>
-3 cups powdered sugar
-▢
-⅔ cup Dutch Process cocoa powder
-▢
-¼ teaspoon salt
-▢
-2 to 4 large egg whites, at room temperature
-▢
-1 tablespoon vanilla extract
-▢
+                <p>{!! $recipe_data->instructions !!}</p>
+            </div>
+        </div>
 
-1½ cups bittersweet chocolate chips
-Preheat oven to 350℉. Line two rimmed baking sheets with parchment paper (or silpat mats). If you use parchment paper, give it a light coating of nonstick spray.
-In a large bowl, whisk together the powdered sugar with the cocoa powder and salt. Whisk in the egg whites (start w/ just two) and vanilla extract and beat just until the batter is moistened. You're looking for a brownie-like, thick and fudgy batter consistency. If it seems too thick, add another egg white-- then a 4th one if it still seems too thick. Then gently stir in the chocolate chips.
-Spoon the batter onto the prepared baking sheets in 12 evenly spaced mounds per cookie sheet. I like to use a spring-release cookie scoop. Bake about 14 minutes, until the tops are glossy and lightly cracked. Slide the parchment paper (with the cookies) onto wire racks. Let cookies cool completely, and store in an airtight container for up to 3 days.
-</p>
-
+        <!-- Recipe Ingredients -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Ingredients</h2>
+                <p> {!! $recipe_data->ingredients !!}</p>
+                <p></p>
+                <p>{{ $recipe_data->total_time }} minutes</p>
+                <p>Servings: {{ $recipe_data->servings }}</p>
 
             </div>
         </div>
+
+
 
         <!-- Comments Section -->
         <div class="row mt-5">
@@ -87,7 +73,7 @@ Spoon the batter onto the prepared baking sheets in 12 evenly spaced mounds per 
         <div class="row mt-5">
             <div class="col-md-12 text-center">
                 <h4>Share this Recipe</h4>
-                <a href="https://twitter.com/share?text=Check out this recipe: Delicious Chocolate Cake&url=#"
+                <a href="{https://twitter.com/share?text=Check out this recipe: Delicious Chocolate Cake&url=#"}
                     class="btn btn-info mx-2">Share on Twitter</a>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=#" class="btn btn-primary mx-2">Share on
                     Facebook</a>

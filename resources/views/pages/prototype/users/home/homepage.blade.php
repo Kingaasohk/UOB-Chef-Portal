@@ -8,9 +8,7 @@
             </div>
             <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
                 <img class="img-fluid rounded mb-3" src="{{ asset('template_custom/img/download (1).jpg') }}">
-                <p>
-                    <i class="bi bi-arrow-down animate-up-down" style="font-size: 3rem;"></i>
-                </p>
+
                 <p class="mb-0">
                     Top recipies, best chefs, and more. <br>
                 </p>
@@ -21,11 +19,9 @@
                 </div>
             </div>
             <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                <p>
 
-                <p>
-                    <i class="bi bi-arrow-up animate-up-down" style="font-size: 3rem;"></i>
-                </p>
+
+
                 <img class="img-fluid rounded" src="{{ asset('template_custom/img/FL_ Keller_.jpg') }}">
             </div>
         </div>
@@ -36,10 +32,10 @@
     <!-- About Start -->
     <div class="container-fluid p-5">
         <div class="row gx-5">
-            <div class="col-lg-5 mb-5 mb-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 500px;">
+            <div class="col-lg-5 mb-5 mb-lg-0 wow fadeIn" data-wow-delay="0.1s" style=""object-fit: cover;">
                 <div class="position-relative h-100">
                     <div class="position-absolute top-0 start-0 animate-rotate"
-                        style="width: 160px; height: 160px;">
+                        style="width: auto; height: auto;">
                         <img class="img-fluid" src="{{ asset('template_custom/img/about-round.jpg') }}" alt="">
                     </div>
                     <img class="position-absolute w-100 h-100 rounded-circle rounded-bottom rounded-end"
@@ -55,14 +51,14 @@
                 <div class="row">
                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                         <div class="bg-light rounded p-4">
-                            <img class="img-fluid bg-primary rounded-circle mb-3" src="{{ asset('template_custom/img/feature-1.png') }}" style="width: 80px; height: 80px;">
+                            <img class="img-fluid bg-primary rounded-circle mb-3" src="{{ asset('template_custom/img/feature-1.png') }}" style="width: 80px; height: auto;">
                             <h4>Master Chefs</h4>
                             <p class="mb-0">.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                         <div class="bg-light rounded p-4">
-                            <img class="img-fluid bg-primary rounded-circle mb-3" src="{{ asset('template_custom/img/feature-2.png') }}" style="width: 80px; height: 80px;">
+                            <img class="img-fluid bg-primary rounded-circle mb-3" src="{{ asset('template_custom/img/feature-2.png') }}" style="width: 80px; height: auto;">
                             <h4>Quality Food</h4>
                             <p class="mb-0">.</p>
                         </div>

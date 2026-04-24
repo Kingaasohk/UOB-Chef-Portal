@@ -9,23 +9,21 @@ class ChefController extends Controller
 {
     public function index()
     {
-        $chefs_data = User::list()->get();
-
-        return view('pages.prototype.users.chef-list.index', compact('chefs_data'));
+        $chef = User::list()->get();
+        return view('pages.prototype.users.chef-list.index', compact('chef'));
     }
     public function show(string $id)
     {
-        $chefs = User::list()->chefs($id)->first();
+        $chef = User::list()->author($id)->first();
 
-        return view('pages.prototype.users.profile.show', compact('chefs'));
+        return view('pages.prototype.users.profile.show', compact('chef'));
     }
     //
     public function showPortfolio(string $id)
     {
-        $chefs = User::list()->author($id)->first();
-        $featured_data = $chefs->recipes()->where('featured', 1)->get();
+        $chef = User::list()->author($id)->first();
+        $featured_data = $chef->recipes()->where('featured', 1)->get();
 
-        return view('pages.prototype.users.portfolio.main', compact('chefs', 'featured_data'));
+        return view('pages.prototype.users.portfolio.main', compact('chef', 'featured_data'));
     }
 }
-

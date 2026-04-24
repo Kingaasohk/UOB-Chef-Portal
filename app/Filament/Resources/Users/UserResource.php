@@ -55,7 +55,7 @@ class UserResource extends Resource
         return [
             'index' => ListUsers::route('/'),
             // 'index' => ListUsers::route('/'),
-            // 'create' => CreateUser::route('/create'),
+            'create' => CreateUser::route('/create'),
             'view' => ViewUser::route('/{record}'),
             'edit' => EditUser::route('/{record}/edit'),
         ];
@@ -74,7 +74,7 @@ class UserResource extends Resource
             ->where('id', auth()->id());
     }
 
-    // Label shown in sidebar
+    // // Label shown in sidebar
     public static function getNavigationLabel(): string
     {
         return 'My Profile';

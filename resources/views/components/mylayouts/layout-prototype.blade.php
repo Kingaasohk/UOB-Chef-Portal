@@ -44,9 +44,9 @@
     <div class="container-fluid bg-dark px-0">
         <div class="row gx-0 wow fadeIn" data-wow-delay="0.1s">
             <div class="col-lg-3 bg-primary d-none d-lg-block">
-                <a href="index.html"
+                <a href="{{ route('home') }}"
                     class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <h1 class="m-0 display-4 text-white text-uppercase">Chefer</h1>
+                    <h1 class="m-0 display-4 text-white text-uppercase">Recipenest</h1>
                 </a>
             </div>
             <div class="col-lg-9">
@@ -65,8 +65,8 @@
                     </div>
                 </div>
                 <nav class="navbar navbar-expand-lg navbar-dark p-3 p-lg-0 px-lg-5" style="background: #111111;">
-                    <a href="index.html" class="navbar-brand d-block d-lg-none">
-                        <h1 class="m-0 display-4 text-primary text-uppercase">Chefer</h1>
+                    <a href="{{ route('home') }}" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 display-4 text-primary text-uppercase">Recipenest</h1>
                     </a>
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse">
@@ -74,18 +74,31 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="menu.html" class="nav-item nav-link">Menu</a>
-                            <a href="team.html" class="nav-item nav-link active">Chefs</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="feature.html" class="dropdown-item">Features</a>
-                                    <a href="blog.html" class="dropdown-item">Blog Post</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="{{ route('filament.author.auth.login') }}" class="nav-item nav-link">Dashboard</a>
+                            <a href="{{ route('recipes.index') }}" class="nav-item nav-link">Recipes</a>
+                            <a href="{{ route('chefs.index') }}" class="nav-item nav-link">Chefs</a>
+                            @guest
+
+
+                            <a href="{{ route('login') }}" class="nav-item nav-link">Login</a>
+
+                            <a href="{{ route('register') }}" class="nav-item nav-link">Register</a>
+                            @endguest
+
+                            {{-- //Logout --}}
+                @auth
+                            <a class="nav-item nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+               @endauth
+
+                            <a href="{{ route('logout') }}" class="nav-item nav-link">logout</a>
+
+
+
                         </div>
                         <div class="d-none d-lg-flex align-items-center py-2">
                             <a class="btn btn-outline-secondary btn-square rounded-circle ms-2" href="">

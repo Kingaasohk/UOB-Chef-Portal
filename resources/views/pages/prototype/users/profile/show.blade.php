@@ -19,16 +19,14 @@
                 <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
                     <div class="col-12 col-lg-6">
                         <img class="img-fluid rounded" loading="lazy"
-                            src="{{ asset('storage/images/profiles/harps-joseph-tAvpDE7fXgY-unsplash.jpg') }}"
+                            src="{{ $chef->getImage() }}"
                             alt="About 2">
                     </div>
                     <div class="col-12 col-lg-6">
                         <div class="row justify-content-xl-center">
                             <div class="col-12 col-xl-10">
-                                <h2 class="mb-3">John Doe</h2>
-                                <p class="lead fs-4 mb-3 mb-xl-5">With years of experience and deep industry knowledge,
-                                    we have a proven track record of success and are constantly pushing ourselves to
-                                    stay ahead of the curve.</p>
+                                <h2 class="mb-3">{{ $chef->name }}</h2>
+                                <p class="lead fs-4 mb-3 mb-xl-5">{{ $chef->short_description }}</p>
                                 <div class="d-flex align-items-center mb-3">
                                     <div class="me-3 text-primary">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
@@ -65,8 +63,7 @@
                                         <p class="fs-5 m-0">Let's hire us to reach your objectives.</p>
                                     </div>
                                 </div>
-                                <button type="button" class="btn bsb-btn-xl btn-outline-primary rounded-pill">Connect
-                                    Now</button>
+                               <a href="{{ $chef->getPortfolioLink() }}" class="btn bsb-btn-xl btn-outline-primary rounded-pill" target="_blank">View Portfolio Now</a>
                             </div>
                         </div>
                     </div>

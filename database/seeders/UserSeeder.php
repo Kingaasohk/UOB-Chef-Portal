@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
                 'updated_at' => null,
                 'role' => 'chef',
                 'image_path' => '/images/profiles/',
-                'image_name' => 'default.jpg',
+                'image_name' => 'chef2.jpg',
                 // 'full_description' => 'Description not available',
             ],
             [
@@ -36,7 +36,7 @@ class UserSeeder extends Seeder
                 'updated_at' => null,
                 'role' => 'user',
                 'image_path' => '/images/profiles/',
-                'image_name' => 'default.jpg',
+                'image_name' => '1chef.jpg',
                 // 'full_description' => 'Description not available',
             ],
         ]);

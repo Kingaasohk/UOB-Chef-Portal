@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use App\Models\Recipe;
+
 use Illuminate\Database\Seeder;
 
 class AppSeeder extends Seeder
@@ -14,7 +14,7 @@ class AppSeeder extends Seeder
     public function run(): void
     {
 
-        $total_users = 20;
+        $total_users = 12;
         $reset_recipes = 0; // 1 = yes, 0 = no
 
         // Create x users
