@@ -4,14 +4,14 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1>
-                    {{ $recipe_data->title }}
+                    {{ $recipes->title }}
                 </h1>
-                <h4>{{ $recipe_data->category }}</h4>
+                <h4>{{ $recipes->category }}</h4>
                 <div class="text-center">
                     <img class="recipe-image" style="width: 50%; height: auto;"
-                        src="{{ $recipe_data->getImage() }}"
-                            alt="{{ $recipe_data->title }}">
-                            <p>{!! $recipe_data->full_description !!}</p>
+                        src="{{ $recipes->getImage() }}"
+                            alt="{{ $recipes->title }}">
+                            <p>{!! $recipes->full_description !!}</p>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
         <div class="row mt-4">
             <div class="col-md-12">
                 <h2>Instructions</h2>
-                <p>{!! $recipe_data->instructions !!}</p>
+                <p>{!! $recipes->instructions !!}</p>
             </div>
         </div>
 
@@ -31,10 +31,10 @@
         <div class="row mt-4">
             <div class="col-md-12">
                 <h2>Ingredients</h2>
-                <p> {!! $recipe_data->ingredients !!}</p>
+                <p> {!! $recipes->ingredients !!}</p>
                 <p></p>
-                <p>{{ $recipe_data->total_time }} minutes</p>
-                <p>Servings: {{ $recipe_data->servings }}</p>
+                <p>{{ $recipes->total_time }} minutes</p>
+                <p>Servings: {{ $recipes->servings }}</p>
 
             </div>
         </div>
