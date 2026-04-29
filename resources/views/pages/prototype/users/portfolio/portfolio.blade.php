@@ -14,7 +14,7 @@
 {{-- Page content  --}}
         <div class="row gy-3">
             {{-- repeats each recipie card  --}}
-            @foreach ($recipe_data as $recipe)
+            @foreach ($recipes as $recipe)
                 <div class="col-12 col-md-6 col-lg-4">
                     <article class="card border-0 h-100">
                         <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
@@ -41,7 +41,7 @@
             @endforeach
 
 {{-- recipe pagination  --}}
-           {{ $recipe_data->links() }}
+           {{ $recipes->links() }}
         </div>
     </div>
 </section>

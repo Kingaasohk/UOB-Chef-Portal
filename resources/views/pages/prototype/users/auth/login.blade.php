@@ -1,85 +1,81 @@
-<x-mylayouts.layout-prototype>
+<!-- Login Start -->
+<div class="container-fluid p-5">
+    <div class="mb-5 text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px; margin: auto;">
+        <h5 class="section-title">Welcome Back</h5>
+        <h1 class="display-3">Login</h1>
+    </div>
 
-    <style>
-/* HTML: <div class="loader"></div> */
-.loader {
-    text-align: center;
-  width: fit-content;
-  font-weight: bold;
-  font-family: monospace;
-  font-size: 30px;
-  color: #0000;
-  background: linear-gradient(90deg,#C02942 calc(50% + 0.5ch),#000 0) right/calc(200% + 1ch) 100%;
-  -webkit-background-clip: text;
-          background-clip: text;
-  animation: l7 2s infinite steps(11);
-}
-.loader:before {
-  content:"Please Sign In "
-}
-@keyframes l7 {to{background-position: left}}
-    </style>
+    <div class="row justify-content-center">
+        <div class="col-lg-5">
+            <div class="bg-light rounded p-5 shadow">
 
-    <link rel="stylesheet" href="{{ asset('template_custom/img/Vanilla@.gif') }}">
-    <!-- Login 13 - Bootstrap Brain Component -->
-    <section class="bg-light py-3 py-md-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-                    <div class="card border border-light-subtle rounded-3 shadow-sm">
-                        <div class="card-body p-3 p-md-4 p-xl-5">
-                            <div class="text-center mb-3">
-                               <div class="loader">
+                <form method="POST" action="{{ route('login') }}">
+                    @csrf
 
+                    <!-- Email -->
+                    <div class="form-floating mb-3">
+                        <input
+                            type="email"
+                            class="form-control @error('email') is-invalid @enderror"
+                            id="email"
+                            name="email"
+                            placeholder="name@example.com"
+                            value="{{ old('email') }}"
+                            required
+                        >
+                        <label for="email">Email Address</label>
 
-                               </div>
-
-                            </div>
-                            <h2 class="fs-6 fw-normal text-center text-secondary mb-4"></h2>
-                            <form action="#!">
-                                <div class="row gy-2 overflow-hidden">
-                                    <div class="col-12">
-                                        <div class="form-floating mb-3">
-                                            <input type="email" class="form-control" name="email" id="email"
-                                                placeholder="name@example.com" required>
-                                            <label for="email" class="form-label">Email</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating mb-3">
-                                            <input type="password" class="form-control" name="password" id="password"
-                                                value="" placeholder="Password" required>
-                                            <label for="password" class="form-label">Password</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="d-flex gap-2 justify-content-between">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    name="rememberMe" id="rememberMe">
-                                                <label class="form-check-label text-secondary" for="rememberMe">
-                                                    Keep me logged in
-                                                </label>
-                                            </div>
-                                            <a href="#!" class="link-primary text-decoration-none">Forgot password?</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="d-grid my-3">
-                                            <button class="btn btn-primary btn-lg" type="submit">Log in</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="m-0 text-secondary text-center">Don't have an account? <a href="#!"
-                                                class="link-primary text-decoration-none">Sign up</a></p>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                        @error('email')
+                            <div class="text-danger small">{{ $message }}</div>
+                        @enderror
                     </div>
-                </div>
+
+                    <!-- Password -->
+                    <div class="form-floating mb-3">
+                        <input
+                            type="password"
+                            class="form-control @error('password') is-invalid @enderror"
+                            id="password"
+                            name="password"
+                            placeholder="Password"
+                            required
+                        >
+                        <label for="password">Password</label>
+
+                        @error('password')
+                            <div class="text-danger small">{{ $message }}</div>
+                        @enderror
+                    </div>
+
+                    <!-- Remember + Forgot -->
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="remember" id="remember">
+                            <label class="form-check-label" for="remember">
+                                Remember Me
+                            </label>
+                        </div>
+
+                        <a href="{{ route('password.request') }}" class="text-primary">
+                            Forgot Password?
+                        </a>
+                    </div>
+
+                    <!-- Button -->
+                    <button class="btn btn-primary w-100 py-3" type="submit">
+                        Login
+                    </button>
+
+                    <!-- Register -->
+                    <p class="text-center mt-3 mb-0">
+                        Don't have an account?
+                        <a href="{{ route('register') }}" class="text-primary">Sign up</a>
+                    </p>
+
+                </form>
+
             </div>
         </div>
-    </section>
-
-</x-mylayouts.layout-prototype>
+    </div>
+</div>
+<!-- Login End -->
