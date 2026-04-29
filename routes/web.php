@@ -10,11 +10,11 @@ Route::get('/', [ChefController::class, 'index'])->name('chefs.index');
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-// Recipes
+// // Recipes
 Route::get('/recipes', [RecipeController::class, 'index'])->name('recipes.index');
 Route::get('/recipes/{id}', [RecipeController::class, 'show'])->name('recipes.show');
 
-// Chefs
+// // Chefs
 Route::get('/chefs', [ChefController::class, 'index'])->name('chefs.index');
 Route::get('/chefs/{id}', [ChefController::class, 'show'])->name('chefs.show');
 Route::get('/chefs/{id}/portfolio', [ChefController::class, 'showPortfolio'])->name('chefs.portfolio.show');
@@ -23,3 +23,8 @@ Route::get('/chefs/{id}/portfolio', [ChefController::class, 'showPortfolio'])->n
 require base_path('routes/prototype.php');
 
 Auth::routes();
+
+
+
+Route::get('/chefs', [ChefController::class, 'index'])->name('chefs.index');
+

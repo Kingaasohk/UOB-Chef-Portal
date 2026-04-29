@@ -9,9 +9,10 @@ class ChefController extends Controller
 {
     public function index()
     {
-        $chef = User::list()->get();
-        return view('pages.prototype.users.chef-list.index', compact('chef'));
+        $chef_data = User::list()->get();
+        return view('pages.prototype.users.chef-list.index', compact('chef_data'));
     }
+    
     public function show(string $id)
     {
         $chef = User::list()->author($id)->first();

@@ -74,26 +74,29 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
+                            @auth
                             <a href="{{ route('filament.author.auth.login') }}" class="nav-item nav-link">Dashboard</a>
                             <a href="{{ route('recipes.index') }}" class="nav-item nav-link">Recipes</a>
                             <a href="{{ route('chefs.index') }}" class="nav-item nav-link">Chefs</a>
+
+                            {{-- //Logout --}}
+                            
+                            <a href="{{ route('logout') }}"class="nav-item nav-link"  onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Logout</a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                            </form>
+                            @endauth
+
                             @guest
-
-
                             <a href="{{ route('login') }}" class="nav-item nav-link">Login</a>
 
                             <a href="{{ route('register') }}" class="nav-item nav-link">Register</a>
                             @endguest
 
-                            {{-- //Logout --}}
-                @auth
-                            <a href="{{ route('logout') }}"class="nav-item nav-link"  onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                        @csrf
-                    </form>
-               @endauth
+                            
+                            
 
 
 

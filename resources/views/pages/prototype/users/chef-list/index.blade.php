@@ -18,9 +18,8 @@
             <h1 class="display-3 mb-0">Let's Meet The Experts</h1>
         </div>
 
- @foreach ($chef->chunk(3) as $row)
         <div class="row g-0">
-            @foreach ($row as $data)
+            @foreach ($chef_data as $data)
             <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="team-item position-relative">
                     <div class="position-relative overflow-hidden rounded-circle rounded-bottom rounded-end">
@@ -48,7 +47,6 @@
             </div>
             @endforeach
         </div>
-         @endforeach
          
     </div>
     <!-- Team End -->

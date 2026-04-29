@@ -27,7 +27,7 @@
                 <div id="tab-1" class="tab-pane fade show p-0 active">
                     <div class="row g-4">
 
-                        @foreach ($recipes as $recipe)
+                        @foreach ($recipe_data as $recipe)
                             <div class="col-lg-4 col-md-5 col-sm-6 wow fadeIn">
                                 <div class="position-relative">
                                     <img class="img-fluid" src="{{ $recipe->getImage() }}" alt="">
@@ -43,49 +43,11 @@
                     </div>
                 </div>
                     <div class="tab-content"></div>
-                <!--  LUNCH -->
-                <div id="tab-2" class="tab-pane fade p-0">
-                    <div class="row g-4">
-
-                       @foreach ($recipes as $recipe)
-                            <div class="col-lg-4 col-md-5 col-sm-6 wow fadeIn">
-                                <div class="position-relative">
-                                    <img class="img-fluid" src="{{ $recipe->getImage() }}" alt="">
-                                    <a href="{{ $recipe->getlink() }}">
-                                        <div class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                            {{ $recipe->title }}
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        @endforeach
-
-                    </div>
-                </div>
-                    <div class="tab-content"></div>
-                <!--  DINNER -->
-                <div id="tab-3" class="tab-pane fade p-0">
-                    <div class="row g-4">
-
-                        @foreach ($recipes as $recipe)
-                            <div class="col-lg-4 col-md-5 col-sm-6 wow fadeIn">
-                                <div class="position-relative">
-                                    <img class="img-fluid" src="{{ $recipe->getImage() }}" alt="">
-                                    <a href="{{ $recipe->getlink() }}">
-                                        <div class="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                            {{ $recipe->title }}
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        @endforeach
-
-                    </div>
-                </div>
+               
 
             </div>
         </div>
-{{ $recipes->links() }}
+{{ $recipe_data->links() }}
     </div>
 
 </x-mylayouts.layout-prototype>
