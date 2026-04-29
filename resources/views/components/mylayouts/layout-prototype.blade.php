@@ -90,6 +90,10 @@
                             @endauth
 
                             @guest
+                            <a href="{{ route('recipes.index') }}" class="nav-item nav-link">Recipes</a>
+                            
+                            <a href="{{ route('chefs.index') }}" class="nav-item nav-link">Chefs</a>
+
                             <a href="{{ route('login') }}" class="nav-item nav-link">Login</a>
 
                             <a href="{{ route('register') }}" class="nav-item nav-link">Register</a>
