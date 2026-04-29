@@ -10,7 +10,7 @@
                 <img class="img-fluid rounded mb-3" src="{{ asset('template_custom/img/download (1).jpg') }}">
 
                 <p class="mb-0">
-                    Top recipies, best chefs, and more. <br>
+                    Top Recipe, best chefs, and more. <br>
                 </p>
             </div>
             <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s" style="min-height: 500px;">
