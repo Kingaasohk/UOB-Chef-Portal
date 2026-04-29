@@ -13,7 +13,7 @@
     @include('pages.custom.users.portfolio.filters')
 {{-- Page content  --}}
         <div class="row gy-3">
-            {{-- repeats each recipie card  --}}
+            {{-- repeats each Recipe card  --}}
             @foreach ($recipe_data as $recipe)
                 <div class="col-12 col-md-6 col-lg-4">
                     <article class="card border-0 h-100">
