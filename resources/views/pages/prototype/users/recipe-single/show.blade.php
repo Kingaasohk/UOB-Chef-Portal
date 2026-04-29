@@ -41,34 +41,7 @@
 
 
 
-        <!-- Comments Section -->
-        <div class="row mt-5">
-            <div class="col-md-12">
-                <h2>Comments</h2>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Jenny Koshe</h5>
-                        <p class="card-text">This recipe is amazing! The cake turned out so moist and fluffy. I added a
-                            little extra vanilla, and it was perfect.</p>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Jane Smith</h5>
-                        <p class="card-text">I tried this recipe last weekend. The kids loved it, but I had to bake it a
-                            little longer. Will try again soon!</p>
-                    </div>
-                </div>
-                <form>
-                    <div class="mb-3">
-                        <label for="comment" class="form-label">Leave a comment:</label>
-                        <textarea class="form-control" id="comment" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Post Comment</button>
-                </form>
-            </div>
-        </div>
-
+      
         <!-- Share Recipe -->
         <div class="row mt-5">
             <div class="col-md-12 text-center">
