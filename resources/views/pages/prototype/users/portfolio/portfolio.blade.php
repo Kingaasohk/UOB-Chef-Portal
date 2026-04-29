@@ -13,8 +13,13 @@
     @include('pages.custom.users.portfolio.filters')
 {{-- Page content  --}}
         <div class="row gy-3">
+<<<<<<< HEAD
             {{-- repeats each recipie card  --}}
             @foreach ($recipes as $recipe)
+=======
+            {{-- repeats each Recipe card  --}}
+            @foreach ($recipe_data as $recipe)
+>>>>>>> 47ec8da02bfe7df26d8c9a2f98ef6159c207d573
                 <div class="col-12 col-md-6 col-lg-4">
                     <article class="card border-0 h-100">
                         <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">

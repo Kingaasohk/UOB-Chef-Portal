@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Recipienest - Recipie & chef blog</title>
+    <title>Recipenest - Recipe & chef blog</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -163,7 +163,7 @@
                             <a class="text-secondary mb-2" href="#"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
                             <a class="text-secondary mb-2" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>Recipies</a>
+                                    class="bi bi-arrow-right text-primary me-2"></i>Recipe</a>
                             <a class="text-secondary mb-2" href="#"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Our Chefs</a>
                             <a class="text-secondary mb-2" href="#"><i
@@ -180,7 +180,7 @@
                             <a class="text-secondary mb-2" href="#"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
                             <a class="text-secondary mb-2" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>Recipies</a>
+                                    class="bi bi-arrow-right text-primary me-2"></i>Recipe</a>
                             <a class="text-secondary mb-2" href="#"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Our Chefs</a>
                             <a class="text-secondary mb-2" href="#"><i
@@ -211,7 +211,7 @@
         <div class="row gx-5">
             <div class="col-lg-8">
                 <div class="py-lg-4 text-center">
-                    <p class="text-secondary mb-0">&copy; <a class="text-light fw-bold" href="#">Your Site Name</a>. All  <!-- website name can edit -->
+                    <p class="text-secondary mb-0">&copy; <a class="text-light fw-bold" href="#">RecipeNest</a>. All  <!-- website name can edit -->
                         Rights Reserved. Distributed by <a class="text-light fw-bold"
                         href="https://themewagon.com">ThemeWagon</a></p>
                 </div>
